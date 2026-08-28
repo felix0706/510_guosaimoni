@@ -1,0 +1,251 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{amsmath,amssymb,bm,booktabs,array,graphicx,float}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\sisetup{per-mode=symbol,detect-all}
+
+\title{高性能芯片歧管式微通道热管理系统\问题一：传热与流动机理模型}
+\author{数学建模项目组}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+针对高性能芯片歧管式微通道热管理系统，本文结合附件1给出的结构尺寸、材料物性和边界条件，建立稳态不可压缩流动--固液耦合传热模型；进一步利用附件2的84组样本，分析针肋宽度比、歧管深高比和针肋排数对无量纲热阻、无量纲压降及温度非均匀性的影响。模型表明，结构参数通过改变流通截面积、换热面积、边界层扰动及歧管流量分配共同影响系统性能。数据分析显示：针肋宽度比约为0.20、歧管深高比约为3.5--4.5、针肋排数约为4--6时具有较好的综合性能；针肋过宽或排数过多会因流动阻塞导致压降和温度不均匀性增加。
+\end{abstract}
+
+\section{问题重述与符号说明}
+
+芯片热源位于上表面中心区域，冷却液由顶部入口进入歧管层，经分流后流入下方微通道换热层，最终由侧部出口流出。问题一要求从传热和流动基本机理出发，建立三个结构参数与热阻、压降及温度非均匀性之间的关系，并解释三个性能指标作为综合评价依据的合理性。
+
+令
+\begin{equation}
+ x_1=\text{针肋宽度比},\qquad x_2=\text{歧管深高比},\qquad x_3=\text{单元内针肋排数}.
+\end{equation}
+记 $R$、$\Delta p$ 和 $U_T$ 分别为无量纲热阻、无量纲压降和温度非均匀性。
+
+\begin{table}[H]
+\centering
+\caption{主要符号及含义}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\textwidth}p{0.68\textwidth}}
+\toprule
+符号 & 含义 \\
+\midrule
+$\rho,\mu$ & 冷却液密度、动力黏度 \\
+$c_p,k_f$ & 冷却液比热、导热系数 \\
+$k_s$ & 固体材料导热系数 \\
+$\bm u,p,T$ & 速度、压力和温度场 \\
+$Q$ & 芯片总发热功率 \\
+$D_h,Nu,Re$ & 水力直径、努塞尔数和雷诺数 \\
+$A_{\rm ht}$ & 固液有效换热面积 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{附件一信息与建模假设}
+
+图A1、A2给出了本系统的几何结构。总散热平面为 $10\,\mathrm{mm}\times10\,\mathrm{mm}$，中心均匀热源区域为 $6\,\mathrm{mm}\times6\,\mathrm{mm}$，热源厚度为 $200\,\mu\mathrm m$。图中还标出了 $400\,\mu\mathrm m$、$800\,\mu\mathrm m$、$1.6\,\mathrm{mm}$、$2.4\,\mathrm{mm}$ 和 $520\,\mu\mathrm m$ 等通道、间距及层高尺寸；具体计算时将相应尺寸代入通道截面积、湿周和换热面积。
+
+为突出结构参数的影响，作如下假设：
+\begin{enumerate}
+  \item 冷却液为不可压缩牛顿流体，流动为稳态层流，物性在计算温度范围内视为常数；
+  \item 芯片热源为均匀体热源，芯片与氮化铝基底之间接触良好；
+  \item 固体内以导热为主，固液界面满足对流换热条件；
+  \item 外侧自然对流作为边界散热项，入口质量流量和入口温度已知，出口为定压边界；
+  \item 附件2中的性能指标是数值计算得到的无量纲量，因此物理模型用于解释机理，数据模型用于刻画指标的实际变化。
+\end{enumerate}
+
+\section{传热与流动控制方程}
+
+冷却液满足质量守恒方程
+\begin{equation}
+\nabla\cdot\bm u=0.
+\end{equation}
+稳态动量守恒方程为
+\begin{equation}
+\rho(\bm u\cdot\nabla)\bm u=-\nabla p+\mu\nabla^2\bm u.
+\end{equation}
+流体能量方程为
+\begin{equation}
+\rho c_p\bm u\cdot\nabla T=k_f\nabla^2T.
+\end{equation}
+芯片和氮化铝基底内的稳态导热方程为
+\begin{equation}
+\nabla\cdot(k_s\nabla T)+q'''=0,
+\end{equation}
+其中热源区域内 $q'''=5\times10^9\,\mathrm{W/m^3}$，非热源区域取 $q'''=0$。固液界面满足
+\begin{equation}
+ -k_s\frac{\partial T_s}{\partial n}=h(T_s-T_f).
+\end{equation}
+
+附件1给出的物性和工况为
+\begin{align}
+\rho_w&=998.2\,\mathrm{kg/m^3}, & c_{p,w}&=4182\,\mathrm{J/(kg\cdot K)},\\
+k_w&=0.6\,\mathrm{W/(m\cdot K)}, & \mu_w&=0.001003\,\mathrm{kg/(m\cdot s)},\\
+k_{\rm AlN}&=200\,\mathrm{W/(m\cdot K)}, & k_{\rm chip}&=298\,\mathrm{W/(m\cdot K)},\\
+\dot m&=1\,\mathrm{g/s}=0.001\,\mathrm{kg/s}, & T_{\rm in}&=293\,\mathrm K.
+\end{align}
+
+\section{热源功率与热阻模型}
+
+热源面积和体积分别为
+\begin{equation}
+A_h=(6\times10^{-3})^2=3.6\times10^{-5}\,\mathrm{m^2},
+\end{equation}
+\begin{equation}
+V_h=A_h(200\times10^{-6})=7.2\times10^{-9}\,\mathrm{m^3}.
+\end{equation}
+因此芯片总发热功率为
+\begin{equation}
+Q=q'''V_h=5\times10^9\times7.2\times10^{-9}=36\,\mathrm W.
+\end{equation}
+
+系统热阻定义为芯片最高温度相对于入口冷却液温度的温升与发热功率之比：
+\begin{equation}
+\boxed{R_{\rm th}=\frac{T_{\max}-T_{\rm in}}{Q}=\frac{T_{\max}-293}{36}}.
+\end{equation}
+将热流路径等效为串联热阻，可得
+\begin{equation}
+R_{\rm th}\approx R_{\rm chip}+R_{\rm spread}+R_{\rm AlN}+R_{\rm conv}+R_{\rm fluid}.
+\end{equation}
+其中
+\begin{align}
+R_{\rm chip}&=\frac{L_{\rm chip}}{k_{\rm chip}A_h},\\
+R_{\rm AlN}&=\frac{L_{\rm AlN}}{k_{\rm AlN}A_h},\\
+R_{\rm conv}&=\frac{1}{hA_{\rm ht}}=\frac{D_h}{Nu\,k_wA_{\rm ht}},\\
+R_{\rm fluid}&=\frac{1}{\dot m c_{p,w}}.
+\end{align}
+由附件一的热源厚度估算芯片层导热热阻：
+\begin{equation}
+R_{\rm chip}=\frac{200\times10^{-6}}{298\times3.6\times10^{-5}}
+\approx1.86\times10^{-2}\,\mathrm{K/W}.
+\end{equation}
+冷却液携热项为
+\begin{equation}
+R_{\rm fluid}=\frac{1}{0.001\times4182}\approx0.2391\,\mathrm{K/W}.
+\end{equation}
+由于热源尺寸 $6\,\mathrm{mm}\times6\,\mathrm{mm}$ 小于散热区尺寸 $10\,\mathrm{mm}\times10\,\mathrm{mm}$，需保留扩散热阻 $R_{\rm spread}$；氮化铝层热阻中的 $L_{\rm AlN}$ 应按图A2的实际固体厚度取值，不能简单把某一层高无条件等同于整个基底厚度。
+
+\section{流动阻力与几何参数作用}
+
+对于矩形微通道，若宽度和高度分别为 $w$、$h$，则
+\begin{equation}
+A_c=wh,\qquad P_w=2(w+h),\qquad D_h=\frac{4A_c}{P_w}.
+\end{equation}
+入口体积流量为
+\begin{equation}
+\dot V=\frac{\dot m}{\rho_w}\approx1.002\times10^{-6}\,\mathrm{m^3/s},
+\end{equation}
+平均速度和雷诺数分别为
+\begin{equation}
+v=\frac{\dot V}{A_c},\qquad Re=\frac{\rho_wvD_h}{\mu_w}.
+\end{equation}
+总压降分为沿程损失和局部损失：
+\begin{equation}
+\Delta p=\Delta p_f+\Delta p_l,
+\end{equation}
+\begin{equation}
+\Delta p_f=f\frac{L}{D_h}\frac{\rho_wv^2}{2},
+\qquad
+\Delta p_l=K\frac{\rho_wv^2}{2}.
+\end{equation}
+歧管深高比改变歧管截面积和分流速度，针肋宽度比和排数则主要增加局部损失系数 $K$。
+
+针肋宽度比记为 $\alpha=x_1$。若通道宽度为 $w_c$，针肋直径和半径可表示为
+\begin{equation}
+d_{\rm pin}=\alpha w_c,\qquad r_{\rm pin}=\frac{\alpha w_c}{2}.
+\end{equation}
+针肋增加有效换热面积并扰动热边界层：
+\begin{equation}
+A_{\rm ht}=A_{\rm base}+\eta_fA_{\rm fin},
+\end{equation}
+其中 $\eta_f$ 为针肋效率。适度增大 $\alpha$ 或 $x_3$ 可使 $A_{\rm ht}$ 和 $Nu$ 增大，从而降低对流热阻；当针肋过宽或排数过多时，流动阻塞会使 $K$ 增大、流量分配恶化，导致压降和局部温度升高。
+
+\section{温度非均匀性指标}
+
+若芯片表面离散温度为 $T_i$，可定义相对标准差型温度非均匀性：
+\begin{equation}
+U_T=\frac{\sqrt{n^{-1}\sum_{i=1}^n(T_i-\bar T)^2}}{\bar T},
+\qquad \bar T=\frac1n\sum_{i=1}^nT_i.
+\end{equation}
+也可使用极差型指标
+\begin{equation}
+U_T^{\rm range}=\frac{T_{\max}-T_{\min}}{\bar T}.
+\end{equation}
+本文直接采用附件2给出的温度非均匀性列进行统计。歧管分流越均匀、热点区域换热越充分，$U_T$ 越小。
+
+\section{附件二数据分析}
+
+附件2共包含84组样本。对每个输入参数分组计算三个指标的均值，结果如下。
+
+\begin{table}[H]
+\centering
+\caption{针肋宽度比的分组均值}
+\begin{tabular}{cccc}
+\toprule
+$x_1$ & 热阻 $R$ & 压降 $\Delta p$ & $U_T$\\
+\midrule
+0 & 0.758330 & 0.098479 & 0.848749\\
+0.10 & 0.753881 & 0.104692 & 0.820108\\
+0.15 & 0.745996 & 0.107705 & 0.811081\\
+0.20 & 0.738920 & 0.112094 & 0.799620\\
+0.30 & 0.745610 & 0.143717 & 0.821918\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+当 $x_1$ 从0增至0.20时，热阻均值下降约2.56\%，温度非均匀性下降约5.78\%；继续增至0.30时，压降均值由0.112094显著升至0.143717，热阻和温度非均匀性反而回升，表明存在过度阻塞效应。
+
+\begin{table}[H]
+\centering
+\caption{歧管深高比和针肋排数的分组均值}
+\begin{tabular}{c|ccc|c|ccc}
+\toprule
+\multicolumn{4}{c|}{歧管深高比 $x_2$} & \multicolumn{4}{c}{针肋排数 $x_3$}\\
+$x_2$ & $R$ & $\Delta p$ & $U_T$ & $x_3$ & $R$ & $\Delta p$ & $U_T$\\
+\midrule
+3.0 & 0.737433 & 0.142336 & 0.827478 & 2 & 0.757179 & 0.100285 & 0.807209\\
+3.5 & 0.744062 & 0.119929 & 0.807066 & 4 & 0.746221 & 0.107326 & 0.795144\\
+4.0 & 0.752761 & 0.106077 & 0.811521 & 6 & 0.743284 & 0.118482 & 0.809099\\
+4.5 & 0.752480 & 0.096329 & 0.813437 & 8 & 0.743165 & 0.127893 & 0.827115\\
+ & & & & 10 & 0.740660 & 0.131274 & 0.827341\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+歧管深高比从3.0增至4.5时，压降均值下降约32.33\%，说明流通截面积增大有利于降低阻力；但热阻略有上升，体现换热与泵功耗之间的权衡。针肋排数从2增至10时，热阻总体下降，但压降上升约30.89\%；温度非均匀性在4排时最低，继续增加后恶化。
+
+为辅助判断总体趋势，计算 Pearson 相关系数如下。由于输入参数存在交互作用，相关系数只作趋势参考。
+\begin{table}[H]
+\centering
+\caption{输入参数与性能指标的 Pearson 相关系数}
+\begin{tabular}{c|ccc}
+\toprule
+参数 & $R$ & $\Delta p$ & $U_T$\\
+\midrule
+$x_1$ 针肋宽度比 & -0.3244 & 0.5263 & -0.1470\\
+$x_2$ 歧管深高比 & 0.5374 & -0.6151 & -0.2179\\
+$x_3$ 针肋排数 & -0.5013 & 0.4347 & 0.3035\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{结论}
+
+综合附件一的物理模型和附件二的数据，得到以下结论：
+\begin{enumerate}
+  \item 芯片总发热功率为 $36\,\mathrm W$，系统热阻可定义为 $R_{\rm th}=(T_{\max}-293)/36$；热量传递包括芯片导热、热扩散、氮化铝导热、壁面对流和冷却液携热等环节。
+  \item 针肋宽度比和排数通过增加换热面积、提高边界层扰动强度来降低热阻，但同时增加局部压力损失；歧管深高比主要通过改变流通截面积和流量分配影响压降及温度均匀性。
+  \item 三个指标之间存在冲突，不能只追求热阻最小。热阻反映散热能力，压降反映泵功耗，温度非均匀性反映热点和可靠性风险，三者共同构成合理的综合评价体系。
+  \item 推荐在问题三中重点搜索
+  \[
+  x_1\approx0.20,\qquad x_2\approx3.5\text{--}4.5,\qquad x_3\approx4\text{--}6
+  \]
+  的折中区域。附件2中第64组 $(x_1,x_2,x_3)=(0.20,4.5,4)$ 的指标为 $(R,\Delta p,U_T)=(0.742186,0.083109,0.774010)$，可作为后续多目标优化的候选基准点。
+\end{enumerate}
+
+\end{document}

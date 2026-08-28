@@ -1,0 +1,80 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+\usepackage{geometry,amsmath,booktabs,hyperref}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\title{高性能芯片热管理系统问题二：代理模型}
+\author{数学建模项目组}\date{\today}
+\begin{document}\maketitle
+
+\section{问题与数据}
+附件2包含84组样本。每组样本以针肋宽度比 $x_1$、歧管深高比 $x_2$、针肋排数 $x_3$ 为输入，以无量纲热阻 $R$、无量纲压降 $P$ 和温度非均匀性 $U$ 为输出。为刻画结构参数到性能指标的映射，分别建立三个二次响应面代理模型。
+
+\section{二次响应面模型}
+对任意性能指标 $y\in\{R,P,U\}$，取
+\begin{equation}
+\hat y=\beta_0+\beta_1x_1+\beta_2x_2+\beta_3x_3+\beta_{11}x_1^2+\beta_{22}x_2^2+\beta_{33}x_3^2+\beta_{12}x_1x_2+\beta_{13}x_1x_3+\beta_{23}x_2x_3.
+\end{equation}
+记特征向量
+\[
+\boldsymbol\phi=(1,x_1,x_2,x_3,x_1^2,x_2^2,x_3^2,x_1x_2,x_1x_3,x_2x_3)^\mathrm T,
+\]
+则 $\hat y=\boldsymbol\phi^\mathrm T\boldsymbol\beta$。采用最小二乘法
+\begin{equation}
+\hat{\boldsymbol\beta}=(\Phi^\mathrm T\Phi)^{-1}\Phi^\mathrm Ty.
+\end{equation}
+
+\section{拟合结果}
+由脚本 ``问题二代理模型.py'' 计算得到模型系数如下。系数顺序均为 $(1,x_1,x_2,x_3,x_1^2,x_2^2,x_3^2,x_1x_2,x_1x_3,x_2x_3)$。
+
+\begin{table}[h]
+\centering\caption{三个二次代理模型的系数}
+\small
+\begin{tabular}{c|rrr}
+\toprule
+项 & $R$ & $P$ & $U$\\\midrule
+$\beta_0$&0.6088059&0.3905371&1.2572195\\
+$\beta_1$&-0.0461039&-0.2497283&-0.8342334\\
+$\beta_2$&0.0677676&-0.1248854&-0.1931900\\
+$\beta_3$&0.0004886&0.0018008&-0.0060769\\
+$\beta_{11}$&0.5198733&0.6065597&1.4492512\\
+$\beta_{22}$&-0.0069104&0.0126592&0.0223274\\
+$\beta_{33}$&0.0001876&-0.0003405&0.0003564\\
+$\beta_{12}$&-0.0218153&-0.0011769&0.0625118\\
+$\beta_{13}$&-0.0187149&0.0361245&0.0052244\\
+$\beta_{23}$&-0.0002234&-0.0000391&0.0012317\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+因此三个映射关系分别为 $\hat R=\boldsymbol\phi^\mathrm T\hat{\boldsymbol\beta}_R$、$\hat P=\boldsymbol\phi^\mathrm T\hat{\boldsymbol\beta}_P$ 和 $\hat U=\boldsymbol\phi^\mathrm T\hat{\boldsymbol\beta}_U$，代入上表即可计算任意设计点的预测值。
+
+\section{拟合与预测效果评价}
+采用决定系数、均方根误差和平均绝对误差：
+\begin{align}
+R^2&=1-\frac{\sum_i(y_i-\hat y_i)^2}{\sum_i(y_i-\bar y)^2},\\
+RMSE&=\sqrt{\frac1n\sum_i(y_i-\hat y_i)^2},\\
+MAE&=\frac1n\sum_i|y_i-\hat y_i|.
+\end{align}
+训练集拟合与固定随机种子下的5折交叉验证结果如下。
+
+\begin{table}[h]
+\centering\caption{代理模型精度}
+\begin{tabular}{c|ccc|ccc}
+\toprule
+&\multicolumn{3}{c|}{训练集}&\multicolumn{3}{c}{5折交叉验证}\\
+指标&$R^2$&RMSE&MAE&$R^2$&RMSE&MAE\\\midrule
+热阻 $R$&0.7965&0.00505&0.00421&0.7180&0.00595&0.00491\\
+压降 $P$&0.9763&0.00425&0.00357&0.9674&0.00498&0.00419\\
+温度非均匀性 $U$&0.7968&0.00871&0.00708&0.7460&0.00974&0.00790\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{结果分析}
+压降模型的交叉验证 $R^2=0.9674$，说明二次响应面能够很好地描述压降随结构参数的变化。热阻和温度非均匀性模型的交叉验证 $R^2$ 分别为0.7180和0.7460，预测误差仍较小，但说明二者存在更强的非线性或参数交互作用。训练集与交叉验证指标差距有限，未出现明显过拟合。
+
+因此，本模型适合用于问题三的快速优化和问题四的权重/鲁棒性分析；对预测点应限制在附件2样本的参数范围内，避免对二次响应面进行远距离外推。
+
+\section{结论}
+以三个输入参数的二次项和两两交互项建立的响应面模型，给出了结构参数到三个性能指标的显式映射。模型对压降的拟合和预测最准确，对热阻和温度非均匀性的预测达到可用于优化的精度。后续优化时采用三个代理模型联合评价，并通过交叉验证误差给出预测可信度。
+
+\end{document}
