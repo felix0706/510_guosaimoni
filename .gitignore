@@ -16,3 +16,6 @@ Thumbs.db
 
 # 大型临时输出（需要提交时请移除对应规则）
 # 结果/*.zip
+
+# Office temporary lock files
+~$*
