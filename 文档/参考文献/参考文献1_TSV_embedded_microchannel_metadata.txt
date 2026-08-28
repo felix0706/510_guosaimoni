@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1016" timestamp="2026-03-10 09:17:55">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>International Journal of Heat and Mass Transfer</full_title>
+          <abbrev_title>International Journal of Heat and Mass Transfer</abbrev_title>
+          <issn media_type="print">00179310</issn>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <month>02</month>
+            <year>2026</year>
+          </publication_date>
+          <journal_volume>
+            <volume>255</volume>
+          </journal_volume>
+          <special_numbering>P2</special_numbering>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Design and intelligent optimization of TSV-based embedded microchannel heatsinks in 2.5D Packaging</title>
+          </titles>
+          <contributors>
+            <person_name sequence="first" contributor_role="author">
+              <given_name>Dongqing</given_name>
+              <surname>Cang</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Zixuan</given_name>
+              <surname>Dong</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Shitao</given_name>
+              <surname>Lv</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Chencan</given_name>
+              <surname>Zhou</surname>
+              <ORCID>https://orcid.org/0000-0002-1620-3705</ORCID>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Zhikuang</given_name>
+              <surname>Cai</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Peng</given_name>
+              <surname>Zhang</surname>
+              <ORCID>https://orcid.org/0000-0002-5298-9821</ORCID>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Haiyan</given_name>
+              <surname>Sun</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Jicong</given_name>
+              <surname>Zhao</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="print">
+            <month>02</month>
+            <year>2026</year>
+          </publication_date>
+          <pages>
+            <first_page>127908</first_page>
+          </pages>
+          <publisher_item>
+            <item_number item_number_type="sequence-number">S0017931025012438</item_number>
+            <item_number item_number_type="article-number">127908</item_number>
+            <identifier id_type="pii">S0017931025012438</identifier>
+          </publisher_item>
+          <crossmark>
+            <crossmark_policy>10.1016/elsevier_cm_policy</crossmark_policy>
+            <crossmark_domains>
+              <crossmark_domain>
+                <domain>elsevier.com</domain>
+              </crossmark_domain>
+              <crossmark_domain>
+                <domain>sciencedirect.com</domain>
+              </crossmark_domain>
+            </crossmark_domains>
+            <crossmark_domain_exclusive>true</crossmark_domain_exclusive>
+            <custom_metadata>
+              <assertion name="publisher" label="This article is maintained by ">Elsevier</assertion>
+              <assertion name="articletitle" label="Article Title">Design and intelligent optimization of TSV-based embedded microchannel heatsinks in 2.5D Packaging</assertion>
+              <assertion name="journaltitle" label="Journal Title">International Journal of Heat and Mass Transfer</assertion>
+              <assertion name="articlelink" label="CrossRef DOI link to publisher maintained version">https://doi.org/10.1016/j.ijheatmasstransfer.2025.127908</assertion>
+              <assertion name="content_type" label="Content Type">article</assertion>
+              <assertion name="copyright" label="Copyright">© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.</assertion>
+              <program name="fundref">
+                <assertion name="fundgroup">
+                  <assertion name="funder_name">
+                    <assertion name="funder_identifier">http://dx.doi.org/10.13039/501100013112</assertion>
+                    Transformation Program of Scientific and Technological Achievements of Jiangsu Province
+                  </assertion>
+                  <assertion name="award_number">BA2023031</assertion>
+                </assertion>
+                <assertion name="fundgroup">
+                  <assertion name="funder_name">
+                    <assertion name="funder_identifier">http://dx.doi.org/10.13039/501100002338</assertion>
+                    Ministry of Education of the People&amp;apos;s Republic of China
+                  </assertion>
+                  <assertion name="award_number">LHJJ/2025-04</assertion>
+                </assertion>
+                <assertion name="fundgroup">
+                  <assertion name="funder_name">
+                    <assertion name="funder_identifier">http://dx.doi.org/10.13039/501100004921</assertion>
+                    Shanghai Jiao Tong University
+                  </assertion>
+                </assertion>
+                <assertion name="fundgroup">
+                  <assertion name="funder_name">
+                    <assertion name="funder_identifier">http://dx.doi.org/10.13039/501100001809</assertion>
+                    National Natural Science Foundation of China
+                  </assertion>
+                  <assertion name="award_number">92373207</assertion>
+                  <assertion name="award_number">12401700</assertion>
+                  <assertion name="award_number">U23B2042</assertion>
+                  <assertion name="award_number">U22B2024</assertion>
+                </assertion>
+              </program>
+              <program name="AccessIndicators">
+                <license_ref applies_to="tdm">https://www.elsevier.com/tdm/userlicense/1.0/</license_ref>
+                <license_ref applies_to="tdm">https://www.elsevier.com/legal/tdmrep-license</license_ref>
+                <license_ref applies_to="stm-asf">https://doi.org/10.15223/policy-017</license_ref>
+                <license_ref applies_to="stm-asf">https://doi.org/10.15223/policy-037</license_ref>
+                <license_ref applies_to="stm-asf">https://doi.org/10.15223/policy-012</license_ref>
+                <license_ref applies_to="stm-asf">https://doi.org/10.15223/policy-029</license_ref>
+                <license_ref applies_to="stm-asf">https://doi.org/10.15223/policy-004</license_ref>
+              </program>
+            </custom_metadata>
+          </crossmark>
+          <doi_data>
+            <doi>10.1016/j.ijheatmasstransfer.2025.127908</doi>
+            <resource>https://linkinghub.elsevier.com/retrieve/pii/S0017931025012438</resource>
+            <collection property="text-mining">
+              <item>
+                <resource mime_type="text/xml">https://api.elsevier.com/content/article/PII:S0017931025012438?httpAccept=text/xml</resource>
+              </item>
+              <item>
+                <resource mime_type="text/plain">https://api.elsevier.com/content/article/PII:S0017931025012438?httpAccept=text/plain</resource>
+              </item>
+            </collection>
+            <collection property="link-header">
+              <item link_header_relationship="dul">
+                <resource>https://dul.usage.elsevier.com/doi/</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0001">
+              <journal_title>IEEE Trans. Compon., Packag. Manuf. Technol.</journal_title>
+              <author>Lau</author>
+              <volume>13</volume>
+              <issue>1</issue>
+              <first_page>3</first_page>
+              <cYear>2023</cYear>
+              <doi provider="crossref">10.1109/TCPMT.2023.3234007</doi>
+              <article_title>Recent advances and trends in multiple system and heterogeneous integration with TSV interposers</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0002">
+              <journal_title>IEEe Spectr.</journal_title>
+              <author>Schaller</author>
+              <volume>34</volume>
+              <issue>6</issue>
+              <first_page>52</first_page>
+              <cYear>2002</cYear>
+              <doi provider="crossref">10.1109/6.591665</doi>
+              <article_title>Moore's law: past, present and future</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0003">
+              <journal_title>Microelectr. Reliab.</journal_title>
+              <author>Tu</author>
+              <volume>51</volume>
+              <issue>3</issue>
+              <first_page>517</first_page>
+              <cYear>2011</cYear>
+              <doi provider="crossref">10.1016/j.microrel.2010.09.031</doi>
+              <article_title>Reliability challenges in 3D IC packaging technology</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0004">
+              <journal_title>Energy</journal_title>
+              <author>He</author>
+              <volume>216</volume>
+              <cYear>2021</cYear>
+              <doi provider="crossref">10.1016/j.energy.2020.119223</doi>
+              <article_title>Thermal management and temperature uniformity enhancement of electronic devices by micro heat sinks: a review</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0005">
+              <journal_title>Int. J. Thermal Sci.</journal_title>
+              <author>Chai</author>
+              <volume>127</volume>
+              <first_page>201</first_page>
+              <cYear>2018</cYear>
+              <doi provider="crossref">10.1016/j.ijthermalsci.2018.01.029</doi>
+              <article_title>Thermal-hydraulic performance of interrupted microchannel heat sinks with different rib geometries in transverse microchambers</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0006">
+              <journal_title>Int. J. Thermal Sci.</journal_title>
+              <author>Chai</author>
+              <volume>110</volume>
+              <first_page>1</first_page>
+              <cYear>2016</cYear>
+              <doi provider="crossref">10.1016/j.ijthermalsci.2016.06.029</doi>
+              <article_title>Laminar flow and heat transfer characteristics of interrupted microchannel heat sink with ribs in the transverse microchambers</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0007">
+              <journal_title>Appl. Therm. Eng.</journal_title>
+              <author>Li</author>
+              <volume>178</volume>
+              <cYear>2020</cYear>
+              <doi provider="crossref">10.1016/j.applthermaleng.2020.115639</doi>
+              <article_title>Heat transfer and flow characteristics of microchannels with solid and porous ribs</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0008">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Hung</author>
+              <volume>66</volume>
+              <first_page>235</first_page>
+              <cYear>2013</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2013.07.019</doi>
+              <article_title>Thermal performance analysis of porous-microchannel heat sinks with different configuration designs</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0009">
+              <author>Lee</author>
+              <cYear>2024</cYear>
+              <series_title>2024 23rd IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems (ITherm)</series_title>
+              <article_title>Analytical prediction of thermal performance and flow non-uniformity of manifold microchannel heat sinks</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0010">
+              <journal_title>Nanomanuf. Metrol.</journal_title>
+              <author>McCormack</author>
+              <volume>5</volume>
+              <issue>4</issue>
+              <first_page>354</first_page>
+              <cYear>2022</cYear>
+              <doi provider="crossref">10.1007/s41871-021-00118-2</doi>
+              <article_title>Numerical analysis of microchannels designed for heat sinks</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0011">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Dong</author>
+              <volume>220</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2023.125001</doi>
+              <article_title>Research progress on passive enhanced heat transfer technology in microchannel heat sink</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0012">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Chai</author>
+              <volume>62</volume>
+              <first_page>741</first_page>
+              <cYear>2013</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2013.03.045</doi>
+              <article_title>Heat transfer enhancement in microchannel heat sinks with periodic expansion–constriction cross-sections</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0013">
+              <journal_title>J. Electron. Packag.</journal_title>
+              <author>Xie</author>
+              <volume>136</volume>
+              <issue>2</issue>
+              <cYear>2014</cYear>
+              <doi provider="crossref">10.1115/1.4025757</doi>
+              <article_title>Thermal performance of a water-cooled microchannel heat sink with grooves and obstacles</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib43">
+              <journal_title>Appl. Thermal Eng.</journal_title>
+              <author>Kumar</author>
+              <volume>214</volume>
+              <first_page>118865</first_page>
+              <cYear>2022</cYear>
+              <doi provider="crossref">10.1016/j.applthermaleng.2022.118865</doi>
+              <article_title>Interplay of wettability and confinement enhancing the performance of heat sinks [J]</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0014">
+              <journal_title>Appl. Therm. Eng.</journal_title>
+              <author>Tan</author>
+              <volume>240</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.applthermaleng.2023.122237</doi>
+              <article_title>Experimental study on heat transfer performance of a series combined microchannel heat dissipation system based on Al2O3 nanofluid</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0015">
+              <journal_title>Appl. Therm. Eng.</journal_title>
+              <author>Kumar</author>
+              <volume>250</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.applthermaleng.2024.123574</doi>
+              <article_title>A facile design of porous heat sink optimized thermodynamically for thermo-hydraulic performance</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0016">
+              <journal_title>Thermal Sci. Eng. Progress</journal_title>
+              <author>Rastogi</author>
+              <volume>47</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.tsep.2023.102359</doi>
+              <article_title>Non-trivial thermal and rheological behaviour of complex nanofluids in bifurcated micro-confinements</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0017">
+              <journal_title>Energy</journal_title>
+              <author>He</author>
+              <volume>285</volume>
+              <cYear>2023</cYear>
+              <doi provider="crossref">10.1016/j.energy.2023.129451</doi>
+              <article_title>Applying artificial neural network to approximate and predict the transient dynamic behavior of CO2 combined cooling and power cycle</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0018">
+              <journal_title>IEEe Trans. Instrum. Meas.</journal_title>
+              <author>Wang</author>
+              <cYear>2025</cYear>
+              <article_title>Proper orthogonal decomposition and long short-term memory neural network based multiphysics digital twin model for electronic device online condition monitoring</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0019">
+              <journal_title>Anal. Chim. Acta</journal_title>
+              <author>Wang</author>
+              <volume>1221</volume>
+              <cYear>2022</cYear>
+              <doi provider="crossref">10.1016/j.aca.2022.339927</doi>
+              <article_title>Numerical simulation of heat transfer and flow of Al2O3-water nanofluid in microchannel heat sink with cantor fractal structure based on genetic algorithm</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0020">
+              <journal_title>IEEE Trans. Compon., Packag. Manuf. Technol.</journal_title>
+              <author>Zhang</author>
+              <volume>13</volume>
+              <issue>6</issue>
+              <first_page>838</first_page>
+              <cYear>2023</cYear>
+              <doi provider="crossref">10.1109/TCPMT.2023.3292005</doi>
+              <article_title>Investigation on embedded microchannel heatsink for 2.5-D integrated package</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0021">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>He</author>
+              <volume>214</volume>
+              <cYear>2023</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2023.124442</doi>
+              <article_title>Investigation of heat transfer performance for through-silicon via embedded in micro pin fins in 3D integrated chips</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0022">
+              <journal_title>Appl. Therm. Eng.</journal_title>
+              <author>He</author>
+              <volume>248</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.applthermaleng.2024.123218</doi>
+              <article_title>Multi-field coupling in designing embedded microchannels for three-dimensional integrated chip: a topology optimization approach</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0023">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Li</author>
+              <volume>144</volume>
+              <cYear>2019</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2019.118638</doi>
+              <article_title>Optimal design and thermal modelling for liquid-cooled heat sink based on multi-objective topology optimization: an experimental and numerical study</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0024">
+              <journal_title>Appl. Therm. Eng.</journal_title>
+              <author>Ma</author>
+              <volume>120</volume>
+              <first_page>247</first_page>
+              <cYear>2017</cYear>
+              <doi provider="crossref">10.1016/j.applthermaleng.2017.03.123</doi>
+              <article_title>Multi-parameter optimization for micro-channel heat sink under different constraint conditions</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0025">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Polat</author>
+              <volume>194</volume>
+              <cYear>2022</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2022.123015</doi>
+              <article_title>Artificial neural network model and multi-objective optimization of microchannel heat sinks with diamond-shaped pin fins</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0026">
+              <journal_title>Case Studies Thermal Eng.</journal_title>
+              <author>Wang</author>
+              <volume>53</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.csite.2023.103843</doi>
+              <article_title>Performance and parameter optimization design of microchannel heat sink with different cavity and rib combinations</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0027">
+              <journal_title>IEEE Trans. Evolut. Comput.</journal_title>
+              <author>Deb</author>
+              <volume>6</volume>
+              <issue>2</issue>
+              <first_page>182</first_page>
+              <cYear>2002</cYear>
+              <doi provider="crossref">10.1109/4235.996017</doi>
+              <article_title>A fast and elitist multiobjective genetic algorithm: NSGA-II</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0028">
+              <cYear>2024</cYear>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0030">
+              <journal_title>Physics of Fluids</journal_title>
+              <author>Wang</author>
+              <volume>37</volume>
+              <issue>1</issue>
+              <cYear>2025</cYear>
+              <article_title>A high heat transfer performance of inclined rib mini-channel heat sink designed by machine learning and laser powder bed fusion</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0029">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Ghahremannezhad</author>
+              <volume>122</volume>
+              <first_page>1313</first_page>
+              <cYear>2018</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2018.02.024</doi>
+              <article_title>Thermal and hydraulic performance enhancement of microchannel heat sinks utilizing porous substrates</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0031">
+              <journal_title>IEEE Trans. Compon., Packag. Manuf. Technol.</journal_title>
+              <author>Sun</author>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1109/TCPMT.2024.3451136</doi>
+              <article_title>Enhanced junction temperature prediction model for CoWoS packaging with multiple chiplets</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0032">
+              <journal_title>J. Adv. Res. Fluid Mech. Thermal Sci.</journal_title>
+              <author>Japar</author>
+              <volume>45</volume>
+              <issue>1</issue>
+              <first_page>165</first_page>
+              <cYear>2018</cYear>
+              <article_title>A comprehensive review on numerical and experimental study of nanofluid performance in microchannel heatsink (MCHS)</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0033">
+              <journal_title>Case Studies Thermal Eng.</journal_title>
+              <author>Du</author>
+              <volume>67</volume>
+              <cYear>2025</cYear>
+              <doi provider="crossref">10.1016/j.csite.2025.105850</doi>
+              <article_title>Computational analysis of heat transfer and fluid flow characteristics in a diamond microchannel heat sink with orthogonal ribs</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0034">
+              <author>Gavin</author>
+              <first_page>1</first_page>
+              <cYear>2019</cYear>
+              <series_title>The Levenberg-Marquardt algorithm for Nonlinear Least Squares Curve-Fitting Problems</series_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0035">
+              <journal_title>IEEe Access.</journal_title>
+              <author>Verma</author>
+              <volume>9</volume>
+              <first_page>57757</first_page>
+              <cYear>2021</cYear>
+              <doi provider="crossref">10.1109/ACCESS.2021.3070634</doi>
+              <article_title>A comprehensive review on NSGA-II for multi-objective combinatorial optimization problems</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0037">
+              <journal_title>Int. Commun. Heat and Mass Transfer</journal_title>
+              <author>Feng</author>
+              <volume>159</volume>
+              <cYear>2024</cYear>
+              <doi provider="crossref">10.1016/j.icheatmasstransfer.2024.108137</doi>
+              <article_title>Hybrid neural network based multi-objective optimal design of hybrid pin-fin microchannel heatsink for integrated microsystems</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0038">
+              <journal_title>Electronics. (Basel)</journal_title>
+              <author>Sun</author>
+              <volume>12</volume>
+              <issue>7</issue>
+              <first_page>1604</first_page>
+              <cYear>2023</cYear>
+              <article_title>Chiplet multi-objective optimization algorithm based on communication consumption and temperature</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0039">
+              <journal_title>IEEE Trans. Compon., Packag. Manuf. Technol.</journal_title>
+              <author>Lu</author>
+              <volume>7</volume>
+              <issue>2</issue>
+              <first_page>229</first_page>
+              <cYear>2017</cYear>
+              <article_title>Coupled electrical–thermal–mechanical simulation for the reliability analysis of large-scale 3-D interconnects</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0040">
+              <journal_title>IEEE Trans. Compon., Packag. Manuf. Technol.</journal_title>
+              <author>Huang</author>
+              <volume>9</volume>
+              <issue>5</issue>
+              <first_page>895</first_page>
+              <cYear>2019</cYear>
+              <doi provider="crossref">10.1109/TCPMT.2019.2893742</doi>
+              <article_title>Analysis of thermal stress and strain in BGA solder joint based on microchannel ceramic substrate</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0042">
+              <journal_title>Int. Commun. Heat Mass Transfer</journal_title>
+              <author>Jia</author>
+              <volume>92</volume>
+              <first_page>78</first_page>
+              <cYear>2018</cYear>
+              <doi provider="crossref">10.1016/j.icheatmasstransfer.2017.11.004</doi>
+              <article_title>Heat transfer and fluid flow characteristics of combined microchannel with cone-shaped micro pin fins</article_title>
+            </citation>
+            <citation key="10.1016/j.ijheatmasstransfer.2025.127908_bib0041">
+              <journal_title>Int. J. Heat. Mass Transf.</journal_title>
+              <author>Wang</author>
+              <volume>136</volume>
+              <first_page>597</first_page>
+              <cYear>2019</cYear>
+              <doi provider="crossref">10.1016/j.ijheatmasstransfer.2019.02.018</doi>
+              <article_title>Heat transfer enhancement in microchannel heat sink with bidirectional rib</article_title>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>
